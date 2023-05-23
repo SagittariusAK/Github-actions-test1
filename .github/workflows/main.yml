@@ -4,7 +4,7 @@
 #------------------------------
 name: GitHub Actions-test1
 env:
-  APPlICATION_NAME: "MyFlask"
+  APPLICATION_NAME: "MyFlask"
   DEPLOY_PACKAGE_NAME: "flask-deploy_ver_${{ github.sha }}"
 
 on: 
@@ -24,7 +24,7 @@ jobs:
       run: |
         echo: "Hello Message1"
         echo: "Hello Message2"
-        echo: "Application name: ${{ env.APPlICATION_NAME }}"
+        echo: "Application name: ${{ env.APPLICATION_NAME }}"
   
   my_deploy:
     runs-on: ubuntu-latest
