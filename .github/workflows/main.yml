@@ -5,7 +5,7 @@
 name: GitHub Actions-test1
 env:
   APPLICATION_NAME: "MyFlask"
-  DEPLOY_PACKAGE_NAME: "flask-deploy_ver_${{ github.sha }}"
+  DEPLOY_PACKAGE_NAME: "flask-deploy-ver-${{ github.sha }}"
 
 on: 
   push:
